@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="507.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="proyecto.FXMLDocumentController">
+    <children>
+      <ImageView fx:id="Logo" fitHeight="338.0" fitWidth="520.0" layoutX="-2.0" layoutY="-1.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/imagenes/login.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="btnIniciar" layoutX="102.0" layoutY="260.0" onAction="#Iniciar" text="INICIAR SESION">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="98.0" layoutY="77.0" text="Usuario">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="152.0" text="Contraseña">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="102.0" layoutY="108.0" />
+      <PasswordField fx:id="txtContrasena" layoutX="102.0" layoutY="183.0" />
+    </children>
+</AnchorPane>
